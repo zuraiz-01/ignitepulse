@@ -27,6 +27,10 @@
   margin-inline: auto;
 }
 
+.section {
+  position: relative;
+}
+
 .topbar {
   position: sticky;
   top: 0;
@@ -451,7 +455,7 @@
 }
 
 .home-curation {
-  background: linear-gradient(180deg, #f5f6fb 0%, #eff1fb 100%);
+  background: linear-gradient(180deg, #f8f9ff 0%, #eef1fc 100%);
 }
 
 .home-curation-wrap {
@@ -646,7 +650,7 @@
 }
 
 .home-testimonials {
-  background: #ecedf3;
+  background: linear-gradient(180deg, #eef0f7 0%, #e9edf8 100%);
 }
 
 .testimonials-grid {
@@ -687,7 +691,7 @@
 }
 
 .home-editorial {
-  background: #f5f6fb;
+  background: linear-gradient(180deg, #f7f8fd 0%, #f1f4fc 100%);
 }
 
 .home-editorial-grid {
@@ -742,7 +746,7 @@
 }
 
 .home-faq {
-  background: #f2f4fb;
+  background: linear-gradient(180deg, #f4f6fd 0%, #eef2fc 100%);
 }
 
 .faq-list {
@@ -1829,6 +1833,17 @@
   flex-shrink: 0;
 }
 
+@media (max-width: 1280px) {
+  .nav-links {
+    gap: 12px;
+    font-size: 0.88rem;
+  }
+
+  .search {
+    width: 220px;
+  }
+}
+
 @media (max-width: 1100px) {
   .nav-wrap {
     grid-template-columns: auto auto;
@@ -1877,6 +1892,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .product-actions-row {
+    grid-template-columns: 1fr;
+  }
+
   .value-grid,
   .stats-grid,
   .team-grid,
@@ -1917,6 +1936,10 @@
   .home-curation-card:first-child {
     grid-row: auto;
     min-height: 280px;
+  }
+
+  .quick-view {
+    text-align: center;
   }
 }
 
@@ -2022,6 +2045,12 @@
 
   .detail-actions-row .btn,
   .detail-actions-row .ghost-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .product-actions-row .add-cart,
+  .quick-view {
     width: 100%;
     justify-content: center;
   }
